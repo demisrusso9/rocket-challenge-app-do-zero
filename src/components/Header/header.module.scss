@@ -1,1 +1,20 @@
-// TODO
+.container {
+  background: var(--background);
+  height: 5rem;
+
+  .banner {
+    height: 5rem;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 2rem;
+
+    display: flex;
+    align-items: center;
+
+    img {
+      cursor: pointer;
+      width: 240px;
+      height: 25px;
+    }
+  }
+}
