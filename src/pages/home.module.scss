@@ -1,49 +1,45 @@
-.content {
-  .post {
-    a {
-      text-decoration: none;
+.post {
+  margin: 3.5rem 0;
+  cursor: pointer;
+
+  a {
+    text-decoration: none;
+  }
+
+  strong {
+    font-size: 1.75rem;
+    color: var(--heading);
+    font-weight: bold;
+    transition: color 0.2s;
+
+    &:hover {
+      color: var(--highlight);
     }
+  }
 
-    cursor: pointer;
-    strong {
-      font-size: 1.75rem;
-      color: var(--heading);
-      font-weight: bold;
-      transition: color 0.2s;
+  p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0.8rem 0 1.5rem;
+    color: var(--body);
+  }
 
-      &:hover {
-        color: var(--highlight);
-      }
-    }
+  .postInfo {
+    display: flex;
 
-    p {
-      font-size: 1rem;
-      font-weight: 400;
-      margin: 0.8rem 0 1.5rem;
-      color: var(--body);
-    }
-
-    .postInfo {
+    time,
+    span {
       display: flex;
+      align-items: center;
+      color: var(--info);
 
-      time,
-      span {
-        display: flex;
-        align-items: center;
-        color: var(--info);
-
-        svg {
-          margin-right: 0.5rem;
-        }
-      }
-
-      time + span {
-        margin-left: 1.5rem;
+      svg {
+        margin-right: 0.5rem;
       }
     }
 
-    & + .post {
-      margin-top: 3.5rem;
+    time + span {
+      margin-left: 1.5rem;
     }
   }
 }
@@ -52,8 +48,8 @@
   border: 0;
   background: transparent;
   color: var(--highlight);
-  margin: 3.5rem 0;
   font-size: 1.125rem;
   font-weight: 600;
+  margin-bottom: 3.5rem;
   cursor: pointer;
 }
