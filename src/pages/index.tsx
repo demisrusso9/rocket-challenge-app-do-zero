@@ -66,7 +66,7 @@ export default function Home({ postsPagination }: HomeProps) {
       {postList.map(post => (
         <article className={styles.post} key={post.uid}>
           <Link href={`/post/${post.uid}`}>
-            <a>
+            <span>
               <strong>{post.data.title}</strong>
               <p>{post.data.subtitle}</p>
 
@@ -87,7 +87,7 @@ export default function Home({ postsPagination }: HomeProps) {
                   {post.data.author}
                 </span>
               </div>
-            </a>
+            </span>
           </Link>
         </article>
       ))}
